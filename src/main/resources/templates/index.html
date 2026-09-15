@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringEduManager</title>
+</head>
+<body>
+
+    <h1>SpringEduManager</h1>
+
+    <h2>Sistema de Gestión Educativa</h2>
+
+    <p>Bienvenido a la plataforma de gestión de estudiantes y cursos.</p>
+
+    <a href="/estudiantes">Ver estudiantes</a>
+    <br><br>
+
+    <a href="/cursos">Ver cursos</a>
+    <br><br>
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Cerrar sesión</button>
+    </form>
+
+</body>
+</html>
